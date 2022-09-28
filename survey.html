@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Brooklyn Pizza Works Survey</title>
+    <meta charset="UTF-8"></meta>
+    <link rel="stylesheet" href="survey.css"/>
+  </head>
+  <body>
+    <div class="form">
+    <h1 id="title">Customer Satisfaction Survey</h1>
+    <p id="description">Thank you for dining at Brooklyn Pizza Works & Italian Restaurant. Please leave an honest review of our restaurant! This form should take less than 5 minutes to complete.</p>
+    <fieldset>
+    <form id="survey-form">
+      <label id="name-label" for="name">Enter your first and last name: <input id="name" type="text" class="user-input" name="name" required></input></label>
+      <label id="email-label" for="email">Enter your email: <input id="email" type="email" class="user-input" name="email" required></input></label>
+      <label id="food" for="food-rating" >On a scale of 1 (poor) - 5 (excellent), how would you rate the quality of food at Brooklyn Pizza Works & Italian Restaurant?</label> <p>1 </p> <input id="food-rating" type="range" min="1" max="5" name="food-rating" required></input><p> 5</p>
+      <label id="service" for="service-rating">On a scale of 1 (poor) - 5 (excellent), how would you rate the quality of service at Brooklyn Pizza Works & Italian Restaurant? </label><p>1 </p><input id="service-rating" type="range" min="1" max="5" step="1" value="3" name="service-rating" required></input><p> 5</p>
+      <label id="ambiance" for="ambiance-rating">On a scale of 1 (poor) - 5 (excellent), how would you rate the ambiance at Brooklyn Pizza Works & Italian Restaurant? </label><p>1 </p><input id="ambiance-rating" type="range" min="1" max="5" step="1" value="3" name="ambiance rating" required><p> 5</p></input>
+      <label id="price" for="price-rating">On a scale of 1-5, how would you rate your satisfaction with the prices at Brooklyn Pizza Works & Italian Restaurant?</label> <p>1 <input id="price-rating" type="range" min="1" max="5"  step="1" value="3" name="price-rating" required></input><p> 5</p>
+      <label id="overall" for="overall-rating">On a scale of 1-5, how would you rate the overall quality of your experience at Brooklyn Pizza Works & Italian Restaurant?</label> <p>1 </p><input id="overall-rating" type="range" min="1" max="5" step="1" value="3" name="overall-rating" required></input><p> 5</p>
+      <label for="dropdown"> Approximately how often do you dine at Brooklyn Pizza Works & Italian Restaurant? <select id="dropdown"> 
+        <option name="once-a-week">Once a week</option>
+        <option name="few-a-month">A few times a month</option>
+        <option name="once-a-month">Once a month</option>
+        <option name="every-few-months">Every few months</option>
+        <option name="once-a-year">Once a year</option>
+        <option name="first-time">I am a first-time customer</option>
+      </select></label>
+      <p>Would you recommend Brooklyn Pizza Works & Italian Restaurant to others?</p>
+      <label for="first-option"><input id="first-option" type="radio" name="radio-options" class="inline"/> Yes</label>
+      <label for="second-option"><input id="second-option" type="radio" name="radio-options"/> No</label>
+    <div style="line-height:80%;">
+      <br>
+    </div>
+<p>Where did you hear about Brooklyn Pizza Works & Italian Restaurant from?</p>
+      <label for="first-checkbox"><input id="social-media" type="checkbox" name="checkbox-options" class="inline"/> Social media</label>
+      <label for="second-checkbox"><input id="word-of-mouth" type="checkbox" name="checkbox-options" class="inline"/> Word of mouth</label>
+      <label for="first-checkbox"><input id="ad" type="checkbox" name="checkbox-options" class="inline"/> Advertisement</label>
+      <label for="second-checkbox"><input id="news" type="checkbox" name="checkbox-options" class="inline"/> News</label>
+      <label for="first-checkbox"><input id="reviews" type="checkbox" name="checkbox-options" class="inline"/> Yelp, Google Reviews, etc.</label>
+      <label for="second-checkbox"><input id="saw" type="checkbox" name="checkbox-options" class="inline"/> Saw the restaurant</label>
+    <div style="line-height:80%;">
+      <br>
+    </div>
+      <p>Please leave any additional comments or feedback here:</p><label for="textarea"><textarea id="textarea"  name="additional" rows="10" cols="60"></textarea></label>
+      <input type="submit" value="Submit" />
+  </fieldset>
+  </form>
+  </div>
+  <div class="container">
+  </div>
+</html>
